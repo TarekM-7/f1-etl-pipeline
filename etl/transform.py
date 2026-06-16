@@ -19,13 +19,16 @@ def transform(results_df, drivers_df, races_df):
     )
     return new_df
 
-if __name__ == '__main__':
-    from extract import extract_results, extract_drivers, extract_races
+# if __name__ == '__main__':
+#     from extract import extract_results, extract_drivers, extract_races
 
-    results_df = extract_results('data/raw/results.csv')
-    drivers_df = extract_drivers('data/raw/drivers.csv')
-    races_df = extract_races('data/raw/races.csv')
+#     results_df = extract_results('data/raw/results.csv')
+#     drivers_df = extract_drivers('data/raw/drivers.csv')
+#     races_df = extract_races('data/raw/races.csv')
 
-    df = transform(results_df, drivers_df, races_df)
-    print(df.head(20))
-    print(df.shape)
+#     df = transform(results_df, drivers_df, races_df)
+#     print(df.head(20))
+#     print(df.shape)
+#     print(df['avg_position'].isnull().sum())
+#     print(df[(df['forename'] == 'Lewis') & (df['year'] == 2008)])
+#     print(df[(df['forename'] == 'Max') & (df['year'] == 2023)])
