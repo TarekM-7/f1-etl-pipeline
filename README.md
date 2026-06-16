@@ -1,4 +1,4 @@
-# f1-etl-pipeline
+# 🏎️f1-etl-pipeline
 
 An ETL pipeline that processes Formula 1 race data, calculates driver career statistics, and loads the transformed results to AWS S3 for analytical querying with DuckDB.
 
@@ -53,7 +53,7 @@ The data is cleaned, joined, and aggregated to create driver-level performance m
 The transformed dataset is written to the `data/processed` directory and uploaded to an AWS S3 bucket. The resulting files can be queried directly using DuckDB for further analysis.
 
 ## Project Structure
-
+```text
 f1-etl-pipeline/
 ├─ requirements.txt # Python package requirements
 ├─ data/
@@ -69,8 +69,8 @@ f1-etl-pipeline/
 ├─ .gitignore # Git ignore rules
 ├─ main.py # Runs the complete ETL workflow
 ├─ README.md # Project overview, setup, and usage instructions
-
-## How to Run
+```
+## 🏃How to Run
 
 ### Prerequisites
 
@@ -131,17 +131,19 @@ python sql/query_runner.py
 
 Querying Max Verstappen's career statistics:
 
-year avg_position races_entered
-0 2015 11.16 19
-1 2016 6.90 21
-2 2017 9.30 20
-3 2018 6.10 21
-4 2019 5.00 21
-5 2020 7.12 17
-6 2021 4.14 22
-7 2022 3.50 22
-8 2023 1.27 22
-9 2024 3.62 24
+```text
+year  avg_position  races_entered
+2015      11.16            19
+2016       6.90            21
+2017       9.30            20
+2018       6.10            21
+2019       5.00            21
+2020       7.12            17
+2021       4.14            22
+2022       3.50            22
+2023       1.27            22
+2024       3.62            24
+```
 
 The data clearly shows Verstappen's progression from a 17-year-old debutant averaging P11 in 2015 to the most dominant season in modern F1 history in 2023.
 
