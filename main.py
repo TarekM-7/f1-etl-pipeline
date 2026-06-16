@@ -1,7 +1,8 @@
+from etl.extract import extract_results, extract_drivers, extract_races
+from etl.transform import transform
+from etl.load import load
+
 if __name__ == '__main__':
-    from etl.extract import extract_results, extract_drivers, extract_races
-    from etl.transform import transform
-    from etl.load import load
 
     results_df = extract_results('data/raw/results.csv')
     drivers_df = extract_drivers('data/raw/drivers.csv')
