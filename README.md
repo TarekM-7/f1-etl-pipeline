@@ -1,4 +1,4 @@
-# F1-ETL-PIPELINE
+# f1-etl-pipeline
 
 An ETL pipeline that processes Formula 1 race data, calculates driver career statistics, and loads the transformed results to AWS S3 for analytical querying with DuckDB.
 
@@ -83,7 +83,7 @@ f1-etl-pipeline/
 1. Clone the repository
 
 ```bash
-   git clone https://github.com/your-username/f1-etl-pipeline.git
+   git clone https://github.com/TarekM-7/f1-etl-pipeline.git
    cd f1-etl-pipeline
 ```
 
