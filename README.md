@@ -17,7 +17,7 @@ This project uses historical Formula 1 race data from the Ergast dataset to trac
 - **AWS S3** — cloud data lake storage
 
 ## Pipeline Architecture
-
+```text
 Raw CSV Files
 │
 ▼
@@ -39,7 +39,7 @@ Raw CSV Files
 ┌────────┐
 │ AWS S3 │
 └────────┘
-
+```
 ### Extract
 
 The pipeline reads raw Formula 1 data from CSV files containing race results, driver information, and season data. Relevant datasets are loaded into memory and prepared for transformation.
