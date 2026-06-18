@@ -1,15 +1,8 @@
 import os
 from dotenv import load_dotenv
 import boto3
-import logging
-
-logging.basicConfig(
-    format='[{levelname}] {asctime} | {message}',
-    style='{',
-    datefmt='%H:%M:%S',
-    level=logging.INFO
-)
-logger = logging.getLogger(__name__)
+from etl.logger import get_logger
+logger = get_logger(__name__)
 
 def load(df, local_path, s3_key):
     try:

@@ -1,13 +1,7 @@
 import pandas as pd
 import logging
-
-logging.basicConfig(
-    format='[{levelname}] {asctime} | {message}',
-    style='{',
-    datefmt='%H:%M:%S',
-    level=logging.INFO
-)
-logger = logging.getLogger(__name__)
+from etl.logger import get_logger
+logger = get_logger(__name__)
 
 def extract_results(path):
     try:
